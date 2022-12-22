@@ -28,7 +28,7 @@ function LoginPage() {
             select(wallet.name);
             connect();
         }
-    }, [publicKey, wallet]);
+    }, [connect, publicKey, select]);
 
     useEffect(() => {
         if (!user || !nfts) return;
